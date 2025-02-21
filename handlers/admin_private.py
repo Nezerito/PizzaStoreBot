@@ -3,8 +3,8 @@ from aiogram.filters import Command, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
-from pizza_store.filters.chat_types import ChatTypeFilter, IsAdmin
-from pizza_store.kbs.reply import get_keyboard
+from filters.chat_types import ChatTypeFilter, IsAdmin
+from kbs.reply import get_keyboard
 
 admin_router = Router()
 admin_router.message.filter(ChatTypeFilter(["private"]), IsAdmin())

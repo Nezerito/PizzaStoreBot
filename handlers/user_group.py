@@ -3,7 +3,7 @@ from string import punctuation
 from aiogram import types, Router, Bot
 from aiogram.filters import Command
 
-from pizza_store.filters.chat_types import ChatTypeFilter
+from filters.chat_types import ChatTypeFilter
 
 user_group_router = Router()
 user_group_router.message.filter(ChatTypeFilter(['group', 'supergroup']))

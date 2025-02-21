@@ -9,10 +9,10 @@ from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
 
-from pizza_store.handlers.user_private import user_private_router
-from pizza_store.handlers.user_group import user_group_router
-from pizza_store.handlers.admin_private import admin_router
-from pizza_store.common.bot_cmds_list import private
+from handlers.user_private import user_private_router
+from handlers.user_group import user_group_router
+from handlers.admin_private import admin_router
+from common.bot_cmds_list import private
 
 ALLOWED_UPDATES = ['message', 'edited_message']
 

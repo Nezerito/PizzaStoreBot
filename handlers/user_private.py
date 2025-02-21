@@ -2,9 +2,9 @@ from aiogram import F, types, Router
 from aiogram.filters import CommandStart, Command
 from aiogram.utils.formatting import as_list, as_marked_section, Bold
 
-from pizza_store.filters.chat_types import ChatTypeFilter
-from pizza_store.kbs import reply
-from pizza_store.kbs.reply import get_keyboard
+from filters.chat_types import ChatTypeFilter
+from kbs import reply
+from kbs.reply import get_keyboard
 
 user_private_router = Router()
 user_private_router.message.filter(ChatTypeFilter(['private']))
